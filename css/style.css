@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.5) !important;
+    background-color: rgba(234, 234, 233, 0.5) !important;
     backdrop-filter: blur(10px);
 }
 
@@ -57,6 +57,17 @@ html, body {
     display: none;
 }
 
+/* 手機版 Instagram 圖標樣式 */
+.social-icon-mobile {
+    display: none; /* 預設隱藏，僅在手機上顯示 */
+    margin-left: 10px; /* 增加左側間距，使其與漢堡選單圖標有間隔 */
+}
+
+/* 桌面版 Instagram 圖標樣式 */
+.desktop-only {
+    display: flex; /* 桌面版顯示 */
+}
+
 /* 移動端樣式 */
 @media screen and (max-width: 1023px) {
     .navbar-end .navbar-item:not(:last-child)::after {
@@ -64,8 +75,17 @@ html, body {
     }
     
     .navbar-menu.is-active .navbar-item {
-        text-align: center;
-        padding: 1rem;
+        text-align: left;  /* 改為靠左對齊 */
+        padding: 1rem 2rem;  /* 增加左邊距 */
+    }
+
+    /* 隱藏桌面版 Instagram 圖標，顯示手機版 */
+    .desktop-only {
+        display: none;
+    }
+
+    .social-icon-mobile {
+        display: flex; /* 手機版顯示 */
     }
 }
 
@@ -82,7 +102,7 @@ html, body {
 
 /* Footer 樣式 */
 .footer {
-    background-color: rgba(255, 255, 255, 0.5) !important;
+    background-color: rgba(234, 234, 233) !important;
     backdrop-filter: blur(10px);
     padding: 0.5rem 1.5rem;
     min-height: 3.25rem;
@@ -97,32 +117,32 @@ html, body {
 
 /* footer 聯絡資訊樣式 */
 .contact-item {
-    color: #54595F;
-    padding: 0.5rem 2rem;
-    position: relative;
     display: flex;
-    align-items: center;
-    gap: 10px;  /* 設置圖標和文字之間的間距 */
-}
-
-/* footer 聯絡資訊分隔線樣式 */
-.contact-item:not(:last-child)::after {
-    content: '|';
-    position: absolute;
-    right: 0;
-    color: #54595F;
-}
-
-/* footer 聯絡資訊圖標樣式 */
-.contact-item i {
-    margin-right: 0.5rem;
+    align-items: flex-start;  /* 改為頂部對齊 */
+    gap: 10px;
+    padding: 0.5rem 2rem;
 }
 
 /* footer 聯絡資訊圖標尺寸 */
-.column .contact-item img {
+.contact-item img {
     width: 11px;
-    height: auto;
-    max-height: none !important;
+    height: 11px;  /* 固定高度 */
+    object-fit: contain;  /* 保持圖片比例 */
+    margin-top: 3px;  /* 微調圖標位置，使其與文字第一行對齊 */
+}
+
+/* 分隔線樣式 */
+.separator {
+    width: 1px;
+    background-color: #54595F;
+    margin: 0 10px;
+    align-self: stretch;  /* 讓分隔線自動延伸至容器高度 */
+}
+
+/* 文字容器樣式 */
+.contact-item .text {
+    color: #54595F;
+    flex: 1;  /* 讓文字容器佔據剩餘空間 */
 }
 
 /* 在圖標後添加分隔線 */
@@ -137,18 +157,81 @@ html, body {
     display: none;
 }
 
-/* 分隔線樣式 */
-.contact-item .separator {
-    color: #54595F;
-    margin: 0 10px;
-}
-
 /* 文字樣式 */
 .contact-item .text {
     color: #54595F;
 }
 
-/* 移除最後一個項目的分隔線 */
-.contact-item:last-child .separator {
-    display: none;
+/* 只在電話和地址之間，以及地址和郵件之間顯示分隔線 */
+.contact-item .separator {
+    color: #54595F;
+    margin: 0 10px;
+    display: inline-block;  /* 確保分隔線正確顯示 */
+}
+
+.separator {
+    position: relative;
+    display: flex;
+    align-items: stretch;  /* 讓分隔線伸至整個容器高度 */
+}
+
+.separator::before {
+    content: '';
+    width: 1px;  /* 分隔線的寬度 */
+    background-color: #54595F;  /* 分隔線的色 */
+    margin: 0 10px;  /* 分隔線的左右間距 */
+}
+
+/* 漢堡選單顏色 */
+.navbar-burger span {
+    background-color: #54595F;  /* 與文字顏色相同 */
+}
+
+/* 當漢堡選單被點擊時的顏色 */
+.navbar-burger.is-active span {
+    background-color: #54595F;
+}
+
+/* 選單動畫效果 */
+.navbar-menu {
+    display: block !important;  /* 永遠顯示，但被變形縮小 */
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* 選單展開時的狀態 */
+.navbar-menu.is-active {
+    transform: scaleY(1);
+    height: auto;
+    padding: 0.5rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+    /* 桌面版不需要動畫效果 */
+    .navbar-menu {
+        display: flex !important;
+        transform: none;
+        height: auto;
+        padding: 0;
+    }
+}
+
+/* Instagram 圖標基本樣式 */
+.navbar-end .navbar-item.last-child {
+    display: flex !important;  /* 確保 IG 圖標始終顯示 */
+}
+
+
+/* 平板和桌面版佈局 */
+@media screen and (min-width: 768px) {
+    .navbar-end .navbar-item:last-child {
+        position: static; /* 重置手機版的定位 */
+        transform: none;
+        right: auto;
+        top: auto;
+    }
 }
