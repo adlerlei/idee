@@ -6,10 +6,11 @@
     <title>IDEE Interior Design - 卓悅設計</title>
     <link rel="stylesheet" href="lib/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="has-navbar-fixed-top">
-    <!-- 導航欄 -->
+<body>
+    <!-- 頂部導航欄 -->
     <nav class="navbar is-fixed-top">
         <div class="navbar-brand mx-5">
             <a class="navbar-item" href="index.html">
@@ -25,26 +26,52 @@
                 <span></span>
             </div>
         </div>
-        <!-- 導航欄選單 -->
+        <!-- 主選單 -->
         <div id="navbarExampleTransparentExample" class="navbar-menu is-size-6">
             <div class="navbar-end">
                 <a class="navbar-item" href="index.html">HOME</a>
                 <a class="navbar-item" href="index.html">ABOUT</a>
                 <a class="navbar-item" href="index.html">PROJECTS</a>
                 <a class="navbar-item" href="index.html">CONTACT</a>
+                <a class="navbar-item" href="https://www.instagram.com/vvch623/">
+                    <i class="fa-brands fa-instagram" style="font-size: 21px;"></i>
+                </a>
             </div>
         </div>
     </nav>
 
+    <!-- 使用 hero 來創建全高度的布局 -->
+    <div class="hero is-fullheight">
+        <!-- 主要內容區域 -->
+        <div class="hero-body">
+            <!-- 你的主要內容放這裡 -->
+        </div>
 
-    <!-- 主內容區域 -->
-    <div id="main-content">
-        
-        <!-- 你的主頁內容 -->
-    </div>
-
-    <!-- 引入頁腳 -->
-    <div id="footer"></div>
+        <!-- 頁腳 -->
+        <footer class="footer">
+            <div class="columns is-mobile is-vcentered">
+                <!-- 左側 Logo -->
+                <div class="column is-narrow">
+                    <figure class="image">
+                        <img src="images/idee_footer_logo.png" alt="IDEE Interior Design" width="281">
+                    </figure>
+                </div>
+                <!-- 右側聯絡資訊 -->
+                <div class="column">
+                    <div class="is-flex is-justify-content-flex-end is-size-7">
+                        <span class="contact-item">
+                            <i class="fas fa-phone"></i> 02-2771-6633
+                        </span>
+                        <span class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i> 台北市大安區敦化南路一段233巷28號
+                        </span>
+                        <span class="contact-item">
+                            <i class="fas fa-envelope"></i> service@idee-design.com.tw
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     <!-- 引入 JavaScript -->
     <script src="js/navbar.js"></script>

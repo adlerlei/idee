@@ -1,3 +1,4 @@
+/* 導航欄 */
 .navbar {
     position: fixed;
     width: 100%;
@@ -6,6 +7,7 @@
     backdrop-filter: blur(10px);
 }
 
+/* 設置 logo 的寬度 */
 .navbar-brand .navbar-item figure img {
     width: 99px;
     height: auto;
@@ -28,7 +30,7 @@ html, body {
     background-color: #a39191;
 }
 
-/* 如果有內容區域，也建議設置一下間距 */
+/* 內容區域設置間距 */
 #main-content {
     padding-top: 80px;  /* 為固定導航欄留出空間 */
     min-height: 100vh;  /* 確保內容區域也有足夠高度 */
@@ -45,8 +47,14 @@ html, body {
     content: '|';
     position: absolute;
     right: 0;
-    color: #000;
+    color: #54595F;
     transform: translateX(50%); /* 讓分隔線置中於間距中 */
+}
+
+/* 修改：為 CONTACT 和 Instagram 圖標移除分隔線 */
+.navbar-end .navbar-item:nth-last-child(2)::after,
+.navbar-end .navbar-item:last-child::after {
+    display: none;
 }
 
 /* 移動端樣式 */
@@ -59,4 +67,47 @@ html, body {
         text-align: center;
         padding: 1rem;
     }
+}
+
+/* 取消連結懸停效果 */
+.navbar-end .navbar-item:hover {
+    background-color: transparent !important;
+    color: #54595F !important;
+}
+
+/* 取消 logo 的懸停效果 */
+.navbar-brand .navbar-item:hover {
+    background-color: transparent !important;
+}
+
+/* Footer 樣式 */
+.footer {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1.5rem;
+    min-height: 3.25rem;
+}
+
+/* Footer logo 尺寸 */
+.footer .image img {
+    width: 281px;
+    height: auto;
+    max-height: none !important;  /* 覆蓋 Bulma 的默認限制 */
+}
+
+.contact-item {
+    color: #54595F;
+    padding: 0.5rem 2rem;
+    position: relative;
+}
+
+.contact-item:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #54595F;
+}
+
+.contact-item i {
+    margin-right: 0.5rem;
 }
