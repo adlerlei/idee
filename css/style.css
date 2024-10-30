@@ -1,0 +1,35 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand .navbar-item figure img {
+    width: 99px;
+    height: auto;
+    max-height: none !important;
+}
+
+/* 如果你想要在滾動時才顯示背景色，可以添加這個類別 */
+.navbar.is-scrolled {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+#navbarExampleTransparentExample div a{
+    color: #54595F;
+}
+
+html, body {
+    min-height: 100vh;  /* 確保至少有視窗高度 */
+    margin: 0;
+    padding: 0;
+    background-color: #a39191;
+}
+
+/* 如果有內容區域，也建議設置一下間距 */
+#main-content {
+    padding-top: 80px;  /* 為固定導航欄留出空間 */
+    min-height: 100vh;  /* 確保內容區域也有足夠高度 */
+}
