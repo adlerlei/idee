@@ -33,3 +33,30 @@ html, body {
     padding-top: 80px;  /* 為固定導航欄留出空間 */
     min-height: 100vh;  /* 確保內容區域也有足夠高度 */
 }
+
+/* 導航項目的基本樣式 */
+.navbar-end .navbar-item {
+    position: relative;
+    padding: 0.5rem 2rem; /* 調整左右間距 */
+}
+
+/* 分隔線樣式 */
+.navbar-end .navbar-item:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #000;
+    transform: translateX(50%); /* 讓分隔線置中於間距中 */
+}
+
+/* 移動端樣式 */
+@media screen and (max-width: 1023px) {
+    .navbar-end .navbar-item:not(:last-child)::after {
+        display: none;
+    }
+    
+    .navbar-menu.is-active .navbar-item {
+        text-align: center;
+        padding: 1rem;
+    }
+}
