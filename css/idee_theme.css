@@ -15,7 +15,7 @@
 }
 
 /* navbar burger animation */
-.navbar-menu {
+/* .navbar-menu {
     display: block !important;
     transform: scaleY(0);
     transform-origin: top;
@@ -23,9 +23,9 @@
     height: 0;
     padding: 0;
     overflow: hidden;
-}
-.navbar-menu.is-active {
+} */
+/* .navbar-menu.is-active {
     transform: scaleY(1);
     height: auto;
     padding: 0.5rem 0;
-}
+} */
