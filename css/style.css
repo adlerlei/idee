@@ -14,90 +14,58 @@
     max-height: none !important;
 }
 
-/* 如果你想要在滾動時才顯示背景色，可以添加這個類別 */
-.navbar.is-scrolled {
-    background-color: rgba(255, 255, 255, 0.9) !important;
-}
-
-#navbarExampleTransparentExample div a{
+/* 漢堡選單文字顏色 */
+#navbarExampleTransparentExample div a {
     color: #54595F;
 }
 
+/* 基本樣式 */
 html, body {
-    min-height: 100vh;  /* 確保至少有視窗高度 */
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #a39191;
 }
 
-/* 內容區域設置間距 */
-#main-content {
-    padding-top: 80px;  /* 為固定導航欄留出空間 */
-    min-height: 100vh;  /* 確保內容區域也有足夠高度 */
-}
-
 /* 導航項目的基本樣式 */
 .navbar-end .navbar-item {
     position: relative;
-    padding: 0.5rem 2rem; /* 調整左右間距 */
+    padding: 0.5rem 2rem;
 }
 
-/* 分隔線樣式 */
+/* 內容區域設置間距 */
+.hero-body {
+    padding-top: 80px;
+    min-height: calc(100vh - 80px);
+}
+
+/* navbar 分隔線樣式 */
 .navbar-end .navbar-item:not(:last-child)::after {
     content: '|';
     position: absolute;
     right: 0;
     color: #54595F;
-    transform: translateX(50%); /* 讓分隔線置中於間距中 */
+    transform: translateX(50%);
 }
 
-/* 修改：為 CONTACT 和 Instagram 圖標移除分隔線 */
+/* 移除 CONTACT 和 Instagram 圖標分隔線 */
 .navbar-end .navbar-item:nth-last-child(2)::after,
 .navbar-end .navbar-item:last-child::after {
     display: none;
 }
 
-/* 手機版 Instagram 圖標樣式 */
-.social-icon-mobile {
-    display: none; /* 預設隱藏，僅在手機上顯示 */
-    margin-left: 10px; /* 增加左側間距，使其與漢堡選單圖標有間隔 */
-}
-
-/* 桌面版 Instagram 圖標樣式 */
-.desktop-only {
-    display: flex; /* 桌面版顯示 */
-}
-
-/* 移動端樣式 */
+/* 在平板和手機上隱藏分隔符號 */
 @media screen and (max-width: 1023px) {
     .navbar-end .navbar-item:not(:last-child)::after {
         display: none;
     }
-    
-    .navbar-menu.is-active .navbar-item {
-        text-align: left;  /* 改為靠左對齊 */
-        padding: 1rem 2rem;  /* 增加左邊距 */
-    }
-
-    /* 隱藏桌面版 Instagram 圖標，顯示手機版 */
-    .desktop-only {
-        display: none;
-    }
-
-    .social-icon-mobile {
-        display: flex; /* 手機版顯示 */
-    }
 }
 
-/* 取消連結懸停效果 */
-.navbar-end .navbar-item:hover {
-    background-color: transparent !important;
-    color: #54595F !important;
-}
-
-/* 取消 logo 的懸停效果 */
+/* 取消連結和 logo 的懸停效果 */
+.navbar-end .navbar-item:hover,
 .navbar-brand .navbar-item:hover {
     background-color: transparent !important;
+    color: #54595F !important;
 }
 
 /* Footer 樣式 */
@@ -112,13 +80,13 @@ html, body {
 .footer .image img {
     width: 281px;
     height: auto;
-    max-height: none !important;  /* 覆蓋 Bulma 的默認限制 */
+    max-height: none !important;
 }
 
 /* footer 聯絡資訊樣式 */
 .contact-item {
     display: flex;
-    align-items: flex-start;  /* 改為頂部對齊 */
+    align-items: flex-start;
     gap: 10px;
     padding: 0.5rem 2rem;
 }
@@ -126,9 +94,9 @@ html, body {
 /* footer 聯絡資訊圖標尺寸 */
 .contact-item img {
     width: 11px;
-    height: 11px;  /* 固定高度 */
-    object-fit: contain;  /* 保持圖片比例 */
-    margin-top: 3px;  /* 微調圖標位置，使其與文字第一行對齊 */
+    height: 11px;
+    object-fit: contain;
+    margin-top: 3px;
 }
 
 /* 分隔線樣式 */
@@ -136,55 +104,27 @@ html, body {
     width: 1px;
     background-color: #54595F;
     margin: 0 10px;
-    align-self: stretch;  /* 讓分隔線自動延伸至容器高度 */
-}
-
-/* 文字容器樣式 */
-.contact-item .text {
-    color: #54595F;
-    flex: 1;  /* 讓文字容器佔據剩餘空間 */
-}
-
-/* 在圖標後添加分隔線 */
-.column .contact-item img::after {
-    content: '|';
-    margin: 0 10px;
-    color: #54595F;
-}
-
-/* 移除最後一個項目的分隔線 */
-.contact-item:last-child img::after {
-    display: none;
-}
-
-/* 文字樣式 */
-.contact-item .text {
-    color: #54595F;
-}
-
-/* 只在電話和地址之間，以及地址和郵件之間顯示分隔線 */
-.contact-item .separator {
-    color: #54595F;
-    margin: 0 10px;
-    display: inline-block;  /* 確保分隔線正確顯示 */
-}
-
-.separator {
+    align-self: stretch;
     position: relative;
-    display: flex;
-    align-items: stretch;  /* 讓分隔線伸至整個容器高度 */
 }
 
 .separator::before {
-    content: '';
-    width: 1px;  /* 分隔線的寬度 */
-    background-color: #54595F;  /* 分隔線的色 */
-    margin: 0 10px;  /* 分隔線的左右間距 */
+    content: '|';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #54595F;
+}
+
+/* footer 文字顏色 */
+.contact-item .text {
+    color: #54595F;
+    flex: 1;
 }
 
 /* 漢堡選單顏色 */
 .navbar-burger span {
-    background-color: #54595F;  /* 與文字顏色相同 */
+    background-color: #54595F;
 }
 
 /* 當漢堡選單被點擊時的顏色 */
@@ -192,9 +132,9 @@ html, body {
     background-color: #54595F;
 }
 
-/* 選單動畫效果 */
+/* 漢堡選單動畫滑動效果 */
 .navbar-menu {
-    display: block !important;  /* 永遠顯示，但被變形縮小 */
+    display: block !important;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease;
@@ -203,15 +143,15 @@ html, body {
     overflow: hidden;
 }
 
-/* 選單展開時的狀態 */
+/* 漢堡選單展開時的狀態 */
 .navbar-menu.is-active {
     transform: scaleY(1);
     height: auto;
     padding: 0.5rem 0;
 }
 
+/* 桌面版顯示取消動畫效果並顯示選單 */
 @media screen and (min-width: 1024px) {
-    /* 桌面版不需要動畫效果 */
     .navbar-menu {
         display: flex !important;
         transform: none;
@@ -220,16 +160,15 @@ html, body {
     }
 }
 
-/* Instagram 圖標基本樣式 */
+/* Instagram 圖標基本樣式 確保 IG 圖標始終顯示 */
 .navbar-end .navbar-item.last-child {
-    display: flex !important;  /* 確保 IG 圖標始終顯示 */
+    display: flex !important;
 }
-
 
 /* 平板和桌面版佈局 */
 @media screen and (min-width: 768px) {
     .navbar-end .navbar-item:last-child {
-        position: static; /* 重置手機版的定位 */
+        position: static;
         transform: none;
         right: auto;
         top: auto;
