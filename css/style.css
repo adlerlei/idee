@@ -1,17 +1,17 @@
 /* 導航欄 */
-.navbar {
+/* .navbar {
     position: fixed;
     width: 100%;
     top: 0;
     background-color: rgba(234, 234, 233, 0.5) !important;
     backdrop-filter: blur(10px);
-}
+} */
 
 /* 設置 logo 的寬度 */
 .navbar-brand .navbar-item figure img {
     width: 99px;
     height: auto;
-    max-height: none !important;
+    max-height: none !important;    
 }
 
 /* 漢堡選單文字顏色 */
@@ -21,23 +21,23 @@
 
 /* 基本樣式 */
 html, body {
-    min-height: 100vh;
+    /* min-height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 0; */
     background-color: #a39191;
 }
 
 /* 導航項目的基本樣式 */
-.navbar-end .navbar-item {
+/* .navbar-end .navbar-item {
     position: relative;
     padding: 0.5rem 2rem;
-}
+} */
 
 /* 內容區域設置間距 */
-.hero-body {
+/* .hero-body {
     padding-top: 80px;
     min-height: calc(100vh - 80px);
-}
+} */
 
 /* navbar 分隔線樣式 */
 .navbar-end .navbar-item:not(:last-child)::after {
@@ -68,17 +68,6 @@ html, body {
     color: #54595F !important;
 }
 
-/* Footer 主容器樣式 */
-.footer {
-    flex-shrink: 0;                /* 防止 footer 在 flex 布局中被壓縮 */
-    background-color: rgba(234, 234, 233) !important;  /* 設置半透明背景色 */
-    backdrop-filter: blur(10px);    /* 背景模糊效果，增加毛玻璃效果 */
-    padding: 0.5rem 1.5rem;        /* 內邊距：上下 0.5rem，左右 1.5rem */
-    min-height: 3.25rem;           /* 最小高度，確保 footer 有足夠空間 */
-    display: flex;                 /* 使用 flex 布局 */
-    flex-direction: column;        /* flex 項目垂直排列 */
-    justify-content: space-between; /* 垂直方向上均勻分配空間 */
-}
 
 /* Footer logo 尺寸 */
 .footer .image img {
@@ -89,56 +78,56 @@ html, body {
 
 /* 聯絡資訊項目容器樣式 */
 .contact-item {
-    display: flex;                 /* 使用 flex 布局 */
-    align-items: flex-start;       /* 子元素從頂部對齊 */
-    gap: 10px;                     /* 子元素之間的間距 */
-    padding: 0.5rem 2rem;          /* 內邊距：上下 0.5rem，左右 2rem */
+    display: flex;   
+    align-items: flex-start;   
+    gap: 10px;                
+    padding: 0.5rem 2rem;        
 }
 
 /* 聯絡資訊圖標樣式 */
 .contact-item img {
-    width: 11px;                   /* 圖標寬度 */
-    height: 11px;                  /* 圖標高度 */
-    object-fit: contain;           /* 保持圖片比例完整顯示 */
-    margin-top: 3px;               /* 上方間距，微調對齊位置 */
+    width: 11px;   
+    height: 11px;            
+    /* object-fit: contain;        */
+    margin-top: 3px;             
 }
 
 /* 分隔線容器樣式 */
 .separator {
-    width: 1px;                    /* 分隔線寬度 */
-    background-color: #54595F;     /* 分隔線顏色 */
-    margin: 0 10px;                /* 左右間距各 10px */
-    align-self: stretch;           /* 在 flex 容器中自動伸展高度 */
-    position: relative;            /* 為偽元素定位提供參考 */
+    width: 1px;               
+    background-color: #54595F;   
+    margin: 0 10px;              
+    align-self: stretch;         
+    position: relative;            
 }
 
 /* 分隔線文字樣式 */
-.separator::before {
-    content: '|';                  /* 插入分隔符號 */
-    position: absolute;            /* 絕對定位 */
-    left: 50%;                     /* 水平居中 */
-    transform: translateX(-50%);    /* 精確水平居中對齊 */
-    color: #54595F;                /* 分隔符號顏色 */
-}
+/* .separator::before {
+    content: '|';
+    position: absolute;        
+    left: 50%;                 
+    transform: translateX(-50%);   
+    color: #54595F;         
+} */
 
 /* footer 文字顏色 */
-.contact-item .text {
+/* .contact-item .text {
     color: #54595F;
     flex: 1;
-}
+} */
 
 /* 漢堡選單顏色 */
-.navbar-burger span {
+/* .navbar-burger span {
     background-color: #54595F;
-}
+} */
 
 /* 當漢堡選單被點擊時的顏色 */
-.navbar-burger.is-active span {
+/* .navbar-burger.is-active span {
     background-color: #54595F;
-}
+} */
 
 /* 漢堡選單動畫滑動效果 */
-.navbar-menu {
+/* .navbar-menu {
     display: block !important;
     transform: scaleY(0);
     transform-origin: top;
@@ -146,36 +135,36 @@ html, body {
     height: 0;
     padding: 0;
     overflow: hidden;
-}
+} */
 
 /* 漢堡選單展開時的狀態 */
-.navbar-menu.is-active {
+/* .navbar-menu.is-active {
     transform: scaleY(1);
     height: auto;
     padding: 0.5rem 0;
-}
+} */
 
 /* 桌面版顯示取消動畫效果並顯示選單 */
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     .navbar-menu {
         display: flex !important;
         transform: none;
         height: auto;
         padding: 0;
     }
-}
+} */
 
 /* Instagram 圖標基本樣式 確保 IG 圖標始終顯示 */
-.navbar-end .navbar-item.last-child {
+/* .navbar-end .navbar-item.last-child {
     display: flex !important;
-}
+} */
 
 /* 平板和桌面版佈局 */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .navbar-end .navbar-item:last-child {
         position: static;
         transform: none;
         right: auto;
         top: auto;
     }
-}
+} */

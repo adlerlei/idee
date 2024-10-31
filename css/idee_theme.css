@@ -1,0 +1,31 @@
+/* navbar footer background color */
+.navbar-color {
+    background-color: rgba(234, 234, 233, 0.5) !important;
+}
+.footer-color {
+    background-color: rgba(234, 234, 233, 1) !important;
+}
+
+/* idee logo setting */
+.navbar-brand .navbar-item figure img{
+    width: 99px;
+    height: auto;
+    margin-left: 40px;
+    max-height: none !important;
+}
+
+/* navbar burger animation */
+.navbar-menu {
+    display: block !important;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar-menu.is-active {
+    transform: scaleY(1);
+    height: auto;
+    padding: 0.5rem 0;
+}
