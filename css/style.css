@@ -54,7 +54,7 @@ html, body {
     display: none;
 }
 
-/* 在平板和手機上隱藏分隔符號 */
+/* 在平板和手機上隱藏分符號 */
 @media screen and (max-width: 1023px) {
     .navbar-end .navbar-item:not(:last-child)::after {
         display: none;
@@ -68,12 +68,16 @@ html, body {
     color: #54595F !important;
 }
 
-/* Footer 樣式 */
+/* Footer 主容器樣式 */
 .footer {
-    background-color: rgba(234, 234, 233) !important;
-    backdrop-filter: blur(10px);
-    padding: 0.5rem 1.5rem;
-    min-height: 3.25rem;
+    flex-shrink: 0;                /* 防止 footer 在 flex 布局中被壓縮 */
+    background-color: rgba(234, 234, 233) !important;  /* 設置半透明背景色 */
+    backdrop-filter: blur(10px);    /* 背景模糊效果，增加毛玻璃效果 */
+    padding: 0.5rem 1.5rem;        /* 內邊距：上下 0.5rem，左右 1.5rem */
+    min-height: 3.25rem;           /* 最小高度，確保 footer 有足夠空間 */
+    display: flex;                 /* 使用 flex 布局 */
+    flex-direction: column;        /* flex 項目垂直排列 */
+    justify-content: space-between; /* 垂直方向上均勻分配空間 */
 }
 
 /* Footer logo 尺寸 */
@@ -83,37 +87,38 @@ html, body {
     max-height: none !important;
 }
 
-/* footer 聯絡資訊樣式 */
+/* 聯絡資訊項目容器樣式 */
 .contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 0.5rem 2rem;
+    display: flex;                 /* 使用 flex 布局 */
+    align-items: flex-start;       /* 子元素從頂部對齊 */
+    gap: 10px;                     /* 子元素之間的間距 */
+    padding: 0.5rem 2rem;          /* 內邊距：上下 0.5rem，左右 2rem */
 }
 
-/* footer 聯絡資訊圖標尺寸 */
+/* 聯絡資訊圖標樣式 */
 .contact-item img {
-    width: 11px;
-    height: 11px;
-    object-fit: contain;
-    margin-top: 3px;
+    width: 11px;                   /* 圖標寬度 */
+    height: 11px;                  /* 圖標高度 */
+    object-fit: contain;           /* 保持圖片比例完整顯示 */
+    margin-top: 3px;               /* 上方間距，微調對齊位置 */
 }
 
-/* 分隔線樣式 */
+/* 分隔線容器樣式 */
 .separator {
-    width: 1px;
-    background-color: #54595F;
-    margin: 0 10px;
-    align-self: stretch;
-    position: relative;
+    width: 1px;                    /* 分隔線寬度 */
+    background-color: #54595F;     /* 分隔線顏色 */
+    margin: 0 10px;                /* 左右間距各 10px */
+    align-self: stretch;           /* 在 flex 容器中自動伸展高度 */
+    position: relative;            /* 為偽元素定位提供參考 */
 }
 
+/* 分隔線文字樣式 */
 .separator::before {
-    content: '|';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #54595F;
+    content: '|';                  /* 插入分隔符號 */
+    position: absolute;            /* 絕對定位 */
+    left: 50%;                     /* 水平居中 */
+    transform: translateX(-50%);    /* 精確水平居中對齊 */
+    color: #54595F;                /* 分隔符號顏色 */
 }
 
 /* footer 文字顏色 */
