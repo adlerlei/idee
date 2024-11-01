@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" class="has-navbar-fixed-top">
 
 <head>
     <meta charset="utf-8">
@@ -12,14 +12,15 @@
 
 <body>
     <!-- navbar menu -->
-    <nav class="navbar is-fixed-top navbar-color" role="navigation" aria-label="main navigation">
+    <nav class="navbar navbar is-fixed-top navbar-color" role="navigation" aria-label="main navigation">
+        <!-- navbar idee logo -->
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
                 <figure class="image">
                     <img src="images/idee_logo.png" alt="IDEE Interior Design - 卓悅設計LOGO商標">
                 </figure>
             </a>
-
+            <!-- burger menu -->
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -27,8 +28,12 @@
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
+            <!-- mobile Instagram icon -->
+            <a class="navbar-item is-hidden-desktop" href="https://www.instagram.com/vvch623/">
+                <i class="fa-brands fa-instagram" style="font-size: 21px;"></i>
+            </a>
         </div>
-
+        <!-- navbar menu -->
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
                 <a class="navbar-item">HOME</a>
@@ -38,30 +43,25 @@
                 <a class="navbar-item">PROJECTS</a>
                 <a class="navbar-item is-hidden-touch">|</a>
                 <a class="navbar-item">CONTACT</a>
-                <a class="navbar-item">
+                <!-- desktop instagram icon -->
+                <a class="navbar-item is-hidden-touch" href="https://www.instagram.com/vvch623/">
                     <i class="fa-brands fa-instagram" style="font-size: 21px;"></i>
                 </a>
             </div>
         </div>
     </nav>
 
-    <section class="section"></section>
-    <div class="container">
-        <h1 class="title">主要內容</h1>
-        <p>這裡是主要內容。</p>
-    </div>
-    </section>
+    <main class="section">
+        <div class="container">
+            <h1 class="title">欢迎来到我们的网页</h1>
+            <p>这里是主要内容区域。</p>
+        </div>
+    </main>
 
     <!-- footer -->
-    <footer class="footer navbar is-fixed-bottom footer-color">
+    <footer class="footer footer-color">
         <div class="content has-text-centered">
-            <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
-                The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
-                website content is licensed
-                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-            </p>
+            <p>© 2024 你的公司名称. 保留所有权利。</p>
         </div>
     </footer>
 
