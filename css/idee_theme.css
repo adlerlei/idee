@@ -1,45 +1,19 @@
-html, body {
-    height: 100%; /* 确保html和body占满整个视口 */
-    margin: 0; /* 去除默认边距 */
-}
-body {
-    display: flex; /* 使用Flexbox布局 */
-    flex-direction: column; /* 垂直排列子元素 */
-}
-main {
-    flex-grow: 1; /* 主内容区域占据剩余空间 */
-}
-/* 内边距 */
-footer {
-    padding: 1rem;
-    background-color: rgba(234, 234, 233, 1) !important;
-}
-
 /* navbar footer background color */
 nav {
     background-color: rgba(234, 234, 233, 0.5) !important;
 }
-
-/* navbar menu setting */
-.navbar-menu div a{
-    color: #54595F !important;
+.footer-color {
+    background-color: rgba(234, 234, 233, 1) !important;
 }
 
-/* footer menu setting */
-
 /* idee logo setting */
-<<<<<<< HEAD
 .uk-navbar-container div a img{
-=======
-.navbar-brand .navbar-item figure img {
->>>>>>> 4e99902f2783f8cb739b6c679f05f1efb3b7e41e
     width: 99px;
     height: auto;
     margin-left: 40px;
     max-height: none !important;
 }
 
-<<<<<<< HEAD
 /* navbar menu */
 .uk-dropbar {
     background: #cdcdcd;
@@ -68,27 +42,3 @@ nav {
     transition: background-color 0.2s ease;
     color: #fff;
 }
-=======
-/* navbar burger setting */
-/* animation */
-@media screen and (max-width: 1023px) {
-    .navbar-menu {
-        display: block !important;
-        transform: scaleY(0);
-        transform-origin: top;
-        transition: transform 0.3s ease;
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    .navbar-menu.is-active {
-        transform: scaleY(1);
-        height: auto;
-        padding: 0.5rem 0;
-    }
-}
-.navbar-burger span {
-    background-color: #54595f !important;
-}
->>>>>>> 4e99902f2783f8cb739b6c679f05f1efb3b7e41e
