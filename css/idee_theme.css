@@ -1,5 +1,5 @@
 /* navbar footer background color */
-.navbar-color {
+nav {
     background-color: rgba(234, 234, 233, 0.5) !important;
 }
 .footer-color {
@@ -7,25 +7,38 @@
 }
 
 /* idee logo setting */
-.navbar-brand .navbar-item figure img{
+.uk-navbar-container div a img{
     width: 99px;
     height: auto;
     margin-left: 40px;
     max-height: none !important;
 }
 
-/* navbar burger animation */
-/* .navbar-menu {
-    display: block !important;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 0.3s ease;
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-} */
-/* .navbar-menu.is-active {
-    transform: scaleY(1);
-    height: auto;
-    padding: 0.5rem 0;
-} */
+/* navbar menu */
+.uk-dropbar {
+    background: #cdcdcd;
+}
+
+/* navbar menu font color */
+.uk-navbar-right ul li a {
+    font-family: 'Noto Serif TC', serif; /* 使用 Noto Serif TC 字型 */
+    color: #7a7a7a;
+}
+/* uk-dropbar padding */
+.uk-dropbar{
+    padding: 0 !important;
+}
+
+/* uk-dropbar a padding */
+.uk-dropbar a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+/* uk-dropbar a hover */
+.uk-dropbar a:hover {
+    background-color: rgba(110, 109, 109, 0.5);
+    transition: background-color 0.2s ease;
+    color: #fff;
+}
