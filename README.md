@@ -1,8 +1,4 @@
 # idee 2024/10/30
 
-### 修改紀錄
-- [] 漢堡圖標顏色
-- [] 刪除漢堡選單 IG 圖標
-- [] IG 圖標保持電腦板位置
-- [] Footer 各項設定
-- [] 修復電腦版主選單文字不見問題 (navbar_burger.js)
+### 待辦事項
+- [] navbar hamburger icon and ig iocn change in mobile and ipad .
