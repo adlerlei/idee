@@ -1,93 +1,59 @@
 <!doctype html>
-<html lang="zh-TW">
+<html lang="zh">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IDEE Interior Design - 卓悅設計</title>
-    <link rel="stylesheet" href="lib/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/idee_theme.css" />
 </head>
 
 <body>
-    <!-- 頂部導航欄 -->
-    <nav class="navbar is-fixed-top">
-        <div class="navbar-brand mx-5">
-            <a class="navbar-item" href="index.html">
-                <figure class="image">
-                    <img src="images/idee_logo.png" alt="IDEE Interior Design">
-                </figure>
-            </a>
-            <!-- 漢堡選單 -->
-            <div class="navbar-burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <!-- 手機版 Instagram 圖標 -->
-            <a class="navbar-item is-hidden-desktop" href="https://www.instagram.com/vvch623/">
-                <i class="fa-brands fa-instagram" style="font-size: 21px;"></i>
+    <!-- navbar menu -->
+    <nav class="uk-navbar-container" uk-navbar uk-sticky="position: top">
+        <!-- navbarlogo -->
+        <div class="uk-navbar-left uk-margin-small-top uk-margin-small-bottom uk-margin-small-left">
+            <a class="uk-logo" href="index.html">
+                <img src="images/idee_logo.png" alt="IDEE Interior Design - 卓悅設計_LOGO" />
             </a>
         </div>
-        <!-- 主選單 -->
-        <div id="navbarExampleTransparentExample" class="navbar-menu is-size-6">
-            <div class="navbar-end">
-                <a class="navbar-item" href="index.html">HOME</a>
-                <a class="navbar-item" href="index.html">ABOUT</a>
-                <a class="navbar-item" href="index.html">PROJECTS</a>
-                <a class="navbar-item" href="index.html">CONTACT</a>
-                <!-- 桌面版 Instagram 圖標 -->
-                <a class="navbar-item is-hidden-touch" href="https://www.instagram.com/vvch623/">
-                    <i class="fa-brands fa-instagram" style="font-size: 21px;"></i>
-                </a>
-            </div>
+        <!-- navbar menu -->
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                <li><a class="uk-active" href="index.html">HOME</a></li>
+                <li><a href="">|</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="">|</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="">|</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <!-- desktop instagram icon -->
+                <li><a class="uk-margin-left uk-margin-right" href="https://www.instagram.com/vvch623/" class="uk-margin-small-right" uk-icon="instagram"></a>
+                </li>
+            </ul>
+            <!-- mobile burger menu -->
+            <ul class="uk-navbar-nav uk-hidden@s">
+                <li>
+                    <!-- mobile burger menu button -->
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-parent" href uk-navbar-toggle-icon></a>
+                    <!-- mobile dropdown menu -->
+                    <div class="uk-dropbar uk-dropbar-top uk-width-expand" uk-drop="animation: slide-top; animate-out: true; mode: click">
+                            <a class="uk-active uk-display-block uk-text-small" href="index.html">HOME</a>
+                            <a class="uk-display-block uk-text-small" href="about.html">ABOUT</a>
+                            <a class="uk-display-block uk-text-small" href="projects.html">PROJECTS</a>
+                            <a class="uk-display-block uk-text-small" href="contact.html">CONTACT</a>
+                    </div>
+                </li>
+                <!-- mobile instagram icon -->
+                <li><a class="uk-margin-left uk-margin-right" href="https://www.instagram.com/vvch623/" uk-icon="instagram"></a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-
-
-    <!-- 主要內容區域 -->
-    <div class="columns is-full">
-        <!-- 你的主要內容放這裡 -->
-    </div>
-
-    <!-- 頁腳 -->
-
-        <footer class="footer navbar is-fixed-bottom">
-            <div class="columns is-mobile is-vcentered is-multiline">
-                <!-- 左側 Logo -->
-                <div class="column is-narrow">
-                    <figure class="image">
-                        <img src="images/idee_footer_logo.png" alt="IDEE Interior Design">
-                    </figure>
-                </div>
-                <!-- 右側聯絡資訊 -->
-                <div class="column">
-                    <div class="is-flex-desktop is-justify-content-flex-end is-flex-direction-column-mobile is-size-7">
-                        <span class="contact-item py-2">
-                            <img src="images/idee_foot-phone.png" alt="">
-                            <div class="separator"></div>
-                            <span class="text">+886-2-2653-6685</span>
-                        </span>
-                        <span class="contact-item py-2">
-                            <img src="images/idee_footer_adder.png" alt="">
-                            <div class="separator"></div>
-                            <span class="text">3F.-1, No. 6, Sec. 6, Zhongxiao E. Rd., Nangang Dist, Taipei City 115025,
-                                Taiwan (R.O.C.)</span>
-                        </span>
-                        <span class="contact-item py-2">
-                            <img src="images/idee_footer_mail.png" alt="">
-                            <div class="separator"></div>
-                            <span class="text">idee6685@gmail.com</span>
-                        </span>
-                    </div>
-                </div>
-        </footer>
-
-    <!-- 引入 JavaScript -->
-    <script src="js/navbar.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 </body>
 
 </html>
