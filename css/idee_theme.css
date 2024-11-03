@@ -47,3 +47,52 @@ nav {
 .footer-font {
     font-size: 12px;
 }
+
+.footer-icon {
+    flex-shrink: 0;  /* 防止圖示被壓縮 */
+    width: 11px;     /* 固定寬度 */
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon img {
+    width: 100%;
+    height: auto;
+    min-width: 11px;  /* 確保最小寬度 */
+}
+
+.footer-contact {
+    gap: 10px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* 電腦版時的寬度分配 */
+@media screen and (min-width: 960px) {
+    .footer-contact {
+        flex: 0 0 auto;  /* 不伸縮，保持自然寬度 */
+    }
+    
+    .footer-contact.address {
+        flex: 1 1 50%;  /* 給地址更多空間 */
+        min-width: 400px;  /* 確保最小寬度 */
+    }
+}
+
+/* 手機版時垂直排列 */
+@media screen and (max-width: 959px) {
+    .footer-contact {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .footer-contact.address {
+        width: 100%;
+    }
+}
+
+.footer-text {
+    word-break: break-word;
+    flex: 1;
+}
