@@ -3,7 +3,6 @@ html, body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #a39191;
     height: 100%;
     display: flex;
     flex-direction: column;
