@@ -1,177 +1,209 @@
-/* 基本樣式 */
-html, body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+body {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-}
+  }
 
-/* 導航欄相關樣式 */
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
+  main {
+    flex: 1 0 auto;
+  }
+
+/* 導航欄樣式 */
+nav {
+    height: 88px;
+    line-height: 88px;
     background-color: rgba(234, 234, 233, 0.5) !important;
-    backdrop-filter: blur(10px);
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16px;
 }
 
-.navbar-brand .navbar-item figure img {
-    width: 99px;
-    height: auto;
-    max-height: none !important;
+header nav div a {
+    color: #6e6d6d;
+}
+/* 調整logo位置 */
+.brand-logo img {
+    margin-top: 10px;
+    margin-left: 40px;
 }
 
-.navbar-end .navbar-item {
-    position: relative;
-    padding: 0.5rem 2rem;
+/* 只在中小螢幕顯示漢堡選單 */
+@media only screen and (max-width: 992px) {
+    .sidenav-trigger {
+        display: flex !important;
+        align-items: center !important;
+        height: 88px !important;
+        margin-right: 10px;
+    }
+
+    /* 調整漢堡圖標本身 */
+    .sidenav-trigger i {
+        margin: auto;
+        font-size: 2rem;
+        color: #6e6d6d;
+    }
 }
 
-/* 導航欄分隔線 */
-.navbar-end .navbar-item:not(:last-child)::after {
-    content: '|';
-    position: absolute;
-    right: 0;
-    color: #54595F;
-    transform: translateX(50%);
-}
-
-.navbar-end .navbar-item:nth-last-child(2)::after,
-.navbar-end .navbar-item:last-child::after {
-    display: none;
-}
-
-/* 導航欄文字和懸停效果 */
-#navbarExampleTransparentExample div a,
-.navbar-end .navbar-item:hover,
-.navbar-brand .navbar-item:hover {
-    color: #54595F !important;
-    background-color: transparent !important;
-}
-
-/* 漢堡選單樣式 */
-.navbar-burger span,
-.navbar-burger.is-active span {
-    background-color: #54595F;
-}
-
-.navbar-menu {
-    display: block !important;
+/* 下拉選單樣式 */
+.dropdown-content {
+    background-color: rgba(205, 205, 205, 0.5) !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 88px !important; /* 與導航欄高度相同 */
+    left: 0 !important;
+    opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 0.3s ease;
-    height: 0;
-    padding: 0;
-    overflow: hidden;
+    transition: all 0.4s ease-out !important;
+    z-index: 999 !important;
+    display: block !important;
+    pointer-events: none; /* 初始狀態下不可點擊 */
 }
 
-.navbar-menu.is-active {
+/* 當選單開啟時的狀態 */
+.dropdown-content.show {
+    opacity: 1;
     transform: scaleY(1);
-    height: auto;
-    padding: 0.5rem 0;
+    pointer-events: auto;
 }
 
-/* Hero 區域樣式 */
-.hero {
-    flex: 1;
+/* 選單項目樣式 */
+.dropdown-content li > a {
+    color: #6e6d6d !important;
+    text-align: left !important;
+    font-size: 15px;
+    padding: 10px 20px !important;
+    transition: background-color 0.3s ease;
+    font-family: 'Noto Serif TC', serif;
+    display: block;
 }
 
-.hero-body {
-    padding-top: 80px;
-    min-height: calc(100vh - 80px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 0px;
+.dropdown-content li > a:hover {
+    text-align: left;
+    color: #fff !important;
+    background-color: rgba(110, 109, 109, 0.8) !important;
 }
 
-.hero-body .image img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-
-/* Footer 樣式 */
-.footer {
-    position: relative;
-    flex-shrink: 0;
-    background-color: rgba(234, 234, 233, 1);
-    padding: 1rem;
-}
-
-.footer .image img {
-    width: 281px;
-    height: auto;
-    max-height: none !important;
-}
-
-/* 聯絡資訊樣式 */
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 0.5rem 2rem;
-}
-
-.contact-item img {
-    width: 11px;
-    height: 11px;
-    object-fit: contain;
-    margin-top: 3px;
-}
-
-.contact-item .text {
-    color: #54595F;
-    flex: 1;
-}
-
-/* 分隔線樣式 */
-.separator {
-    width: 1px;
-    background-color: #54595F;
-    margin: 0 10px;
-    align-self: stretch;
-    position: relative;
-}
-
-.separator::before {
-    content: '|';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #54595F;
-}
-
-/* 響應式設計 */
-@media screen and (max-width: 1023px) {
-    .navbar-end .navbar-item:not(:last-child)::after {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .hero-body .image img {
-        height: calc(100vh - 80px - 3.25rem);
-    }
-    .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .navbar-menu {
-        display: flex !important;
-        transform: none;
-        height: auto;
-        padding: 0;
-    }
-}
-
-/* Instagram 圖標樣式 */
-.navbar-end .navbar-item.last-child {
+/* 漢堡選單圖標樣式 */
+.dropdown-trigger {
     display: flex !important;
+    align-items: center !important;
+    height: 88px !important;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* 漢堡選單圖標動畫 */
+.dropdown-trigger.is-active {
+    transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 993px) {
+    .dropdown-trigger {
+        display: none !important;
+    }
+}
+
+
+/* 如果需要調整其他選單項目 */
+.hide-on-med-and-down li a {
+    line-height: 88px; /* 確保所有選單項目高度一致 */
+    display: flex;
+    align-items: center;
+}
+
+/* 手機版 Instagram 圖示樣式 */
+.show-on-medium-and-down {
+    display: flex !important;
+    align-items: center !important;
+    height: 88px !important;
+    margin-right: 15px; /* 與漢堡選單的間距 */
+}
+
+.show-on-medium-and-down i {
+    color: #6e6d6d;
+    line-height: 88px;
+}
+
+/* 確保在大螢幕時隱藏手機版 IG 圖示 */
+@media only screen and (min-width: 993px) {
+    .show-on-medium-and-down {
+        display: none !important;
+    }
+}
+
+/* Footer 整體樣式 */
+.page-footer {
+    padding: 20px 0 !important;
+}
+
+/* Footer 行樣式 */
+.page-footer .row {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+}
+
+/* Footer logo 容器樣式 */
+.page-footer .col.l3.s12 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Footer 資訊樣式 */
+.footer-info {
+    display: flex;
+    justify-content: flex-end; /* 在桌面版靠右對齊 */
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    padding-right: 20px;
+    font-size: 13px;
+}
+
+/* 資訊項目樣式 */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    text-align: left; /* 文字靠左對齊 */
+}
+
+.info-item span {
+    display: flex;
+    align-items: center;
+}
+
+.info-item img {
+    display: block;
+}
+
+/* 響應式調整 */
+@media only screen and (max-width: 992px) {
+    .page-footer .row {
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start; /* 內容靠左對齊 */
+    }
+
+    .page-footer .col.l3.s12 {
+        justify-content: flex-start; /* logo 靠左對齊 */
+        margin-bottom: 20px;
+        padding-left: 0; /* 移除左側內邊距 */
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: flex-start; /* 內容靠左對齊 */
+        gap: 15px;
+        padding-right: 0;
+        width: 100%; /* 確保完整寬度 */
+    }
+
+    .info-item {
+        width: 100%; /* 確保完整寬度 */
+        justify-content: flex-start; /* 內容靠左對齊 */
+    }
 }
