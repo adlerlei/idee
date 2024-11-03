@@ -2,7 +2,8 @@
 nav {
     background-color: rgba(234, 234, 233, 0.5) !important;
 }
-.footer-color {
+.footer_setting {
+    height: 85px;
     background-color: rgba(234, 234, 233, 1) !important;
 }
 
@@ -41,4 +42,8 @@ nav {
     background-color: rgba(110, 109, 109, 0.5);
     transition: background-color 0.2s ease;
     color: #fff;
+}
+
+.footer-font {
+    font-size: 12px;
 }
