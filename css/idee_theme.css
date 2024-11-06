@@ -10,14 +10,14 @@ body {
 }
 
 
-nav {
-    /* background-color: rgba(234, 234, 233, 0.5); */
+/* nav {
+    background-color: rgba(234, 234, 233, 0.5);
     z-index: 1000;
-}
+} */
 
 nav.uk-navbar-container {
-    background-color: rgba(234, 234, 233, 0.5) !important;
-    /* min-height: 80px; */
+    background-color: rgba(234, 234, 233, 0.9) !important;
+    min-height: 80px;
 } 
 
 
@@ -56,13 +56,13 @@ main {
     flex: 1;
     height: calc(100vh - 87px); /* 減去 navbar 的高度 */
     overflow: hidden;
+    margin-top: -87px;
 }
 
 @media screen and (max-width: 640px) {
     main {
         height: auto;
         min-height: 100vh;
-        margin-top: -87px;
         overflow-y: auto;
     }
 }
