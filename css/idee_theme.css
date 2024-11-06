@@ -60,10 +60,32 @@ main {
 }
 
 @media screen and (max-width: 640px) {
-    main {
-        height: auto;
+    body {
         min-height: 100vh;
-        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1;
+        height: calc(100vh - 167px); /* 調整高度：navbar(87px) + footer預估高度(80px) */
+        margin-top: -87px;
+        margin-bottom: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    main .uk-position-relative {
+        height: 100%;
+        position: relative;
+    }
+    
+    main .uk-slideshow-items {
+        height: 100% !important;
+    }
+
+    footer {
+        margin-top: auto; /* 確保footer貼在底部 */
     }
 }
 
@@ -98,3 +120,23 @@ footer {
     align-self: stretch;
     position: relative;
 }}
+
+/* Ulkit Slideshow */
+/* 確保幻燈片容器填滿 main 區域 */
+main .uk-position-relative {
+    height: 100%;
+}
+
+/* 確保幻燈片列表填滿容器 */
+main .uk-slideshow-items {
+    height: 100% !important;
+}
+
+/* 導航按鈕樣式 */
+main .uk-slidenav {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+main .uk-slidenav:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
