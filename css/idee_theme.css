@@ -16,7 +16,7 @@ body {
 } */
 
 nav.uk-navbar-container {
-    background-color: rgba(234, 234, 233, 0.9) !important;
+    background-color: rgba(234, 234, 233, 0.5) !important;
     min-height: 80px;
 } 
 
