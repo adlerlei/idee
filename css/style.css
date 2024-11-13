@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 /* 基本樣式 */
 html, body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
     height: 100%;
+=======
+/* 確保頁面使用全螢幕高度 */
+html, body {
+    height: 100%;
+    margin: 0;
+>>>>>>> bulma
     display: flex;
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 /* 導航欄相關樣式 */
 .navbar {
     position: fixed;
@@ -174,4 +182,62 @@ html, body {
 /* Instagram 圖標樣式 */
 .navbar-end .navbar-item.last-child {
     display: flex !important;
+=======
+
+.content-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        overflow:visible;
+    }
+}
+
+/* 圖片填滿且自動裁切 */
+.full-screen-image {
+    height: 100%;
+    width: 100%;
+    /* 自動裁切並保持比例 */
+    object-fit: cover;
+    /* 圖片居中 */
+    object-position: center;
+}
+
+.footer {
+    position: fixed;       /* 固定定位 */
+    bottom: 0;             /* 固定在視窗底部 */
+    left: 0;
+    width: 100%;           /* 覆蓋整個寬度 */
+    background-color: bisque;
+    padding: 1rem 1.5rem;
+    z-index: 1000;         /* 確保在內容上方 */
+}
+
+.navbar {
+    background-color: rgba(235, 235, 234, 0.9)
+}
+
+.navbar div a {
+    font-family: 'Noto Serif TC', serif;
+    color: #7a7a7a;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    margin: 10px 10px 10px 40px;
+}
+
+.ig-size{
+    font-size: 21px;
+}
+
+.navbar-menu :hover{
+    color:black;
+}
+.navbar-menu{
+    background-color: #cdcdcd;
+>>>>>>> bulma
 }
