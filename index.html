@@ -1,92 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDEE Interior Design - 卓悅設計</title>
-    <link rel="stylesheet" href="lib/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="IDEE Interior Design 卓悅設計，以高級訂製理念打造頂級豪邸.辦公空間.公設.實品屋，屢獲國際大獎肯定。 高規格工程品質與細緻服務，打造室內設計高端專業品牌。" />
+    <title>IDEE Interior Design 卓悅設計</title>
 </head>
 
 <body>
-    <!-- 頂部導航欄 -->
-    <nav class="navbar is-fixed-top">
-        <div class="navbar-brand mx-5">
-            <a class="navbar-item" href="index.html">
-                <figure class="image">
-                    <img src="images/idee_logo.png" alt="IDEE Interior Design">
-                </figure>
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="index.html">
+                <img src="images/idee_logo.png" width="99" height="auto" alt="IDEE Interior Design 卓悅設計 LOGO">
             </a>
-            <!-- 漢堡選單 -->
-            <div class="navbar-burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <!-- 手機版 Instagram 圖標 -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
             <a class="navbar-item is-hidden-desktop" href="https://www.instagram.com/vvch623/">
-                <i class="fa-brands fa-instagram" style="font-size: 21px;"></i>
+                <i class="fa-brands fa-instagram ig-size"></i>
             </a>
         </div>
-        <!-- 主選單 -->
-        <div id="navbarExampleTransparentExample" class="navbar-menu is-size-6">
+
+        <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" href="index.html">HOME</a>
-                <a class="navbar-item" href="index.html">ABOUT</a>
-                <a class="navbar-item" href="index.html">PROJECTS</a>
-                <a class="navbar-item" href="index.html">CONTACT</a>
-                <!-- 桌面版 Instagram 圖標 -->
+                <a href="index.html" class="navbar-item">HOME</a>
+                <a href="" class="navbar-item">|</a>
+                <a href="about.hrml" class="navbar-item">ABOUT</a>
+                <a href="" class="navbar-item">|</a>
+                <a href="projects.html" class="navbar-item">PROJECTS</a>
+                <a href="" class="navbar-item">|</a>
+                <a href="contact.html" class="navbar-item">CONTACT</a>
                 <a class="navbar-item is-hidden-touch" href="https://www.instagram.com/vvch623/">
-                    <i class="fa-brands fa-instagram" style="font-size: 21px;"></i>
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
         </div>
     </nav>
 
-
-
-    <!-- 主要內容區域 -->
-    <div class="columns is-full">
-        <!-- 你的主要內容放這裡 -->
+    <!-- 包裝內容區域的容器 -->
+    <div class="content-wrapper">
+        <img class="full-screen-image" src="images/ba1.jpg" alt="">
     </div>
 
-    <!-- 頁腳 -->
 
-        <footer class="footer navbar is-fixed-bottom">
-            <div class="columns is-mobile is-vcentered is-multiline">
-                <!-- 左側 Logo -->
-                <div class="column is-narrow">
-                    <figure class="image">
-                        <img src="images/idee_footer_logo.png" alt="IDEE Interior Design">
-                    </figure>
+    <footer style="background-color:bisque;">
+        <div class="columns m-1">
+            <div class="column is-3">
+                <img src="images/idee_footer_logo.png" width="281" height="65" alt="">
+            </div>
+            <div class="column is-9">
+                <div class="columns is-12 mt-2 ml-2">
+                    <div class="column is-4">AAA</div>
+                    <div class="column is-4">BBB</div>
+                    <div class="column is-4">CCC</div>
                 </div>
-                <!-- 右側聯絡資訊 -->
-                <div class="column">
-                    <div class="is-flex-desktop is-justify-content-flex-end is-flex-direction-column-mobile is-size-7">
-                        <span class="contact-item py-2">
-                            <img src="images/idee_foot-phone.png" alt="">
-                            <div class="separator"></div>
-                            <span class="text">+886-2-2653-6685</span>
-                        </span>
-                        <span class="contact-item py-2">
-                            <img src="images/idee_footer_adder.png" alt="">
-                            <div class="separator"></div>
-                            <span class="text">3F.-1, No. 6, Sec. 6, Zhongxiao E. Rd., Nangang Dist, Taipei City 115025,
-                                Taiwan (R.O.C.)</span>
-                        </span>
-                        <span class="contact-item py-2">
-                            <img src="images/idee_footer_mail.png" alt="">
-                            <div class="separator"></div>
-                            <span class="text">idee6685@gmail.com</span>
-                        </span>
-                    </div>
-                </div>
-        </footer>
+            </div>
+        </div>
+    </footer>
 
-    <!-- 引入 JavaScript -->
     <script src="js/navbar.js"></script>
 </body>
 
