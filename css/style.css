@@ -56,3 +56,10 @@ html, body {
 .ig-size{
     font-size: 21px;
 }
+
+.navbar-menu :hover{
+    color:black;
+}
+.navbar-menu{
+    background-color: #cdcdcd;
+}
