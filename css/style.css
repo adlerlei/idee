@@ -17,6 +17,9 @@ html, body {
     .content-wrapper {
         overflow:visible;
     }
+    .navbar-menu{
+        background-color: #cdcdcd;
+    }
 }
 
 /* 圖片填滿且自動裁切 */
@@ -29,14 +32,15 @@ html, body {
     object-position: center;
 }
 
-.footer {
-    position: fixed;       /* 固定定位 */
-    bottom: 0;             /* 固定在視窗底部 */
+.footer-color {
+    /* position: fixed;       
+    bottom: 0;             
     left: 0;
-    width: 100%;           /* 覆蓋整個寬度 */
+    width: 100%;           
     background-color: bisque;
     padding: 1rem 1.5rem;
-    z-index: 1000;         /* 確保在內容上方 */
+    z-index: 1000;        */
+    background-color: #e9e9e8;
 }
 
 .navbar {
@@ -59,7 +63,4 @@ html, body {
 
 .navbar-menu :hover{
     color:black;
-}
-.navbar-menu{
-    background-color: #cdcdcd;
 }
