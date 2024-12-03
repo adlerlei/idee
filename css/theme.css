@@ -11,6 +11,10 @@ html, body {
     overflow: hidden;
 }
 
+nav img{
+    width: 99px;
+}
+
 @media (max-width: 640){
     .content-wrapper {
         overflow: visible;
@@ -32,6 +36,6 @@ footer {
     z-index: 1000;
 }
 footer img {
-    width: 281px;
+    width: 188px;
     height: auto;
 }
