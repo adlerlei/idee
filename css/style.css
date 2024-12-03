@@ -13,7 +13,7 @@ html, body {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     .content-wrapper {
         overflow:visible;
     }
@@ -21,6 +21,7 @@ html, body {
         background-color: #cdcdcd;
     }
 }
+
 
 /* 圖片填滿且自動裁切 */
 .full-screen-image {
@@ -44,7 +45,7 @@ html, body {
 }
 
 .navbar {
-    background-color: rgba(235, 235, 234, 0.9)
+    background-color: rgba(255, 255, 255, 0.9)
 }
 
 .navbar div a {
