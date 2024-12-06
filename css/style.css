@@ -20,6 +20,19 @@ html, body {
     .navbar-menu{
         background-color: #cdcdcd;
     }
+    .navbar-menu .navbar-item:hover {
+        background-color: #6e6d6d;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+    .navbar-item {
+        padding: 10px 20px; /* 設定內距，讓背景顏色延展 */
+        margin: 0;          /* 確保沒有留白 */
+    }
+    .footer-pm {
+        margin-left: 28px;
+        padding: 20px 0;
+    }
 }
 
 
@@ -47,8 +60,12 @@ html, body {
 }
 
 .copyright{
-    font-size: 7px;
-    color: #7a7a7a;
+    font-size: 8px;
+    color: #bdbdbd;
+    position: relative;
+    top: -10px;
+    /* right: 30px; */
+    /* transform: translateY(-30px); */
 }
 
 .navbar {
