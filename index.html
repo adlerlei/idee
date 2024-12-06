@@ -54,17 +54,40 @@
 
 
     <!-- Footer -->
-    <div class="footer-color columns m-0">
-        <div class="column is-3">
+    <!-- <div class="footer-color columns m-0 is-gapless is-vcentered">
+        <div class="column">
             <img src="images/idee_footer_logo.png" width="281" height="65" alt="">
         </div>
-        <div class="column is-9">
-            <div class="columns is-12">
-                <div class="column is-4">
-                    <img src="images/idee_foot-phone.png" width="11" height="auto" alt="">
+        <div class="column is-four-fifths has-text-right has-text-left-mobile">
+            <div class="columns">
+                <div class="column">
+                    <div class="grid is-gapless">
+                        <div class="cell"><img src="images/idee_foot-phone.png" width="11" height="auto" alt=""></div>
+                        <div class="cell">|</div>
+                    </div>
                 </div>
-                <div class="column is-4">+886-2-2653-6685</div>
-                <div class="column is-4">CCC</div>
+                <div class="column">+886-2-2653-6685</div>
+                <div class="column">CCC</div>
+            </div>
+        </div>
+    </div> -->
+    <div class="footer-color columns m-0 is-gapless is-vcentered">
+        <div class="column">
+            <img src="images/idee_footer_logo.png" width="281" height="65" alt="">
+        </div>
+        <div class="column is-four-fifths has-text-left-mobile">
+            <div class="columns is-gapless has-text-right"> <!-- 使用 columns 而不是 grid -->
+                <div class="column">
+                    <div class="columns is-gapless"> <!-- 使用 columns 並移除間距 -->
+                        <div class="column is-narrow"> <!-- is-narrow 使其寬度自動調整 -->
+                            <img src="images/idee_foot-phone.png" width="11" height="auto" alt=""> 
+                        </div>
+                        <div class="column is-narrow border-box"></div>
+                        <div class="column is-narrow">+886-2-2653-6685+886-2-2653-6685+886-2-2653-6685</div>
+                    </div>
+                </div>
+                <div class="column">+886-2-2653-6685</div>
+                <div class="column">CCC</div>
             </div>
         </div>
     </div>
