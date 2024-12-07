@@ -1,4 +1,1 @@
-# idee 2024/10/30
-
-### 待辦事項
-- [] navbar hamburger icon and ig iocn change in mobile and ipad .
+# IDEE 卓越設計 - 2024-12-05
