@@ -1,0 +1,36 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+.navbar div a {
+    /* font-family: 'Noto Serif TC', serif; */
+    color: #7a7a7a;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    margin: 10px 10px 10px 40px;
+}
+
+.ig-size{
+    font-size: 21px;
+}
+
+.navbar-menu :hover{
+    color:black;
+}
+
+@media (max-width: 1023px) {
+    .navbar-menu{
+        background-color: #cdcdcd;
+    }
+    .navbar-menu .navbar-item:hover {
+        background-color: #6e6d6d;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+    .navbar-item {
+        padding: 10px 20px;
+        margin: 0;
+    }
+}
