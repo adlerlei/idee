@@ -39,6 +39,9 @@ html, body {
     width: 100vw;
     overflow: hidden;
 }
+.h1-none {
+    display: none;
+}
 /* Content Setting end */
 
 
