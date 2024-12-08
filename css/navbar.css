@@ -34,3 +34,14 @@
         margin: 0;
     }
 }
+
+
+@media screen and (min-width: 1024px) {
+    .navbar-item:hover {
+        background-color: transparent !important;
+    }
+    
+    .navbar-link:hover {
+        background-color: transparent !important;
+    }
+}
