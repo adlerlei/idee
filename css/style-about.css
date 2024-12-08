@@ -1,27 +1,42 @@
 .overlay-box {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 20%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -20%);
     z-index: 1;
     background-color: rgba(255,255,255,0.9);
-    padding: 20px;
-    border-radius: 4px;
+    padding: 10px;
+    border-radius: 2px;
     width: 400px;
     height: 318px;
 }
 
+/* 平板樣式 (768px-1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .overlay-box {
+        /* 保持與桌面版相同位置 */
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -50%);
+        /* 只調整大小相關屬性... */
+        width: 350px;  /* 適當調整寬度 */
+    }
+}
+
 @media (max-width: 768px) {
     .overlay-box {
-        position: absolute;
+        /* 保持與桌面版相同位置 */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1;
-        background-color: rgba(255,255,255,0.9);
-        padding: 20px;
-        border-radius: 4px;
-        width: 300px;
-        height: 299px;
+        /* 只調整大小相關屬性... */
+        width: 350px;  /* 適當調整寬度 */
     }
+}
+
+.overlay-box p{
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
