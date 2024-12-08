@@ -1,38 +1,50 @@
-/* 確保頁面使用全螢幕高度 */
+/* HTML page Setting */
 html, body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
 }
+/* HTML page Setting end */
 
 
+/* Navbar Setting */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+.navbar div a {
+    font-family: 'Noto Serif TC', serif;
+    color: #7a7a7a;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    margin: 10px 10px 10px 40px;
+}
+
+.ig-size{
+    font-size: 21px;
+}
+
+.navbar-menu :hover{
+    color:black;
+}
+/* Navbar Setting end */
+
+
+/* Content Setting */
 .content-wrapper {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
 }
+/* Content Setting end */
 
-@media (max-width: 1023px) {
-    .content-wrapper {
-        overflow:visible;
-    }
-    .navbar-menu{
-        background-color: #cdcdcd;
-    }
-    .navbar-menu .navbar-item:hover {
-        background-color: #6e6d6d;
-        color: #fff;
-        transition: background-color 0.3s ease;
-    }
-    .navbar-item {
-        padding: 10px 20px;
-        margin: 0;
-    }
-    .footer-pm {
-        margin-left: 28px;
-        padding: 20px 0;
-    }
+
+/* Footer Setting */
+.footer-logo {
+    min-width: 250px; /* 設定最小寬度，根據需求調整 */
 }
 
 .footer-color {
@@ -57,33 +69,32 @@ html, body {
     /* transform: translateY(-30px); */
 }
 
-.navbar {
-    background-color: rgba(255, 255, 255, 0.9)
-}
-
-.navbar div a {
-    font-family: 'Noto Serif TC', serif;
-    color: #7a7a7a;
-    font-size: 16px;
-}
-
-.navbar-brand {
-    margin: 10px 10px 10px 40px;
-}
-
-.ig-size{
-    font-size: 21px;
-}
-
-.navbar-menu :hover{
-    color:black;
-}
-
 /* .border-box {
     border-left: 1px solid #000;
 } */
+/* Footer Setting end */
 
-.footer-logo {
-    min-width: 250px; /* 設定最小寬度，根據需求調整 */
+
+/* Mobile web Setting */
+@media (max-width: 1023px) {
+    .content-wrapper {
+        overflow:visible;
+    }
+    .navbar-menu{
+        background-color: #cdcdcd;
+    }
+    .navbar-menu .navbar-item:hover {
+        background-color: #6e6d6d;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+    .navbar-item {
+        padding: 10px 20px;
+        margin: 0;
+    }
+    .footer-pm {
+        margin-left: 28px;
+        padding: 20px 0;
+    }
 }
-
+/* Mobile web Setting end */
