@@ -36,3 +36,95 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.award {
+    margin-top: 200px;
+}
+
+.award ~ p {
+    padding: 0.3rem 0.3rem;
+}
+
+.hr-line {
+    width: 2px;
+    height: 70px;
+    background-color: #e9e9e8;
+    margin: 0 auto;
+}
+
+/* 基本樣式 */
+.splide__track {
+    overflow: hidden !important;
+}
+
+.splide__list {
+    display: flex !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    transform-style: preserve-3d !important;
+}
+
+.splide__slide {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 -30px !important;
+    flex-shrink: 0 !important;
+}
+
+/* 手機版樣式 */
+@media (max-width: 768px) {
+    .splide__slide {
+        margin: 0 -30px !important;
+    }
+}
+
+.splide__slide img {
+    max-width: 80% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+.about-slide {
+    /* margin: 2rem 0; */
+    margin-top: 200px;
+    width: auto;
+}
+
+/* 控制幻燈片容器大小 */
+.splide {
+    width: auto;
+    margin: 0 auto;
+}
+
+/* 箭頭樣式 */
+.splide__arrows {
+    position: relative;
+    z-index: 10;
+}
+
+.splide__arrow {
+    background: rgba(255, 255, 255, 0.8) !important;
+    position: absolute !important;
+    transform: none !important;
+    width: 2em !important;
+    height: 2em !important;
+    top: 40px !important;
+}
+
+.splide__arrow svg {
+    fill: #e9e9e8 !important;  /* 例如：#000000 為黑色 */
+}
+
+
+.splide__arrow--prev {
+    left: 1em !important;
+}
+
+.splide__arrow--next {
+    right: 1em !important;
+}

@@ -31,6 +31,13 @@
     }
 }
 
+@media (max-width: 768px) {
+    .footer-color {
+        position: relative;
+        bottom: auto;
+    }
+}
+
 /* .border-box {
     border-left: 1px solid #000;
 } */
