@@ -1,8 +1,8 @@
 .overlay-box {
     position: absolute;
-    top: 40%;
-    left: 20%;
-    transform: translate(-40%, -20%);
+    top: 30%;
+    left: 8%;
+    transform: translate(-30%, -8%);
     z-index: 1;
     background-color: rgba(255,255,255,0.9);
     padding: 10px;
@@ -11,26 +11,22 @@
     height: 318px;
 }
 
-/* 平板樣式 (768px-1023px) */
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .overlay-box {
-        /* 保持與桌面版相同位置 */
-        top: 50%;
-        left: 20%;
-        transform: translate(-20%, -50%);
-        /* 只調整大小相關屬性... */
-        width: 350px;  /* 適當調整寬度 */
+        top: 30%;
+        left: 8%;
+        transform: translate(-30%, -8%);
+        width: 350px;
     }
 }
 
 @media (max-width: 768px) {
     .overlay-box {
-        /* 保持與桌面版相同位置 */
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* 只調整大小相關屬性... */
-        width: 350px;  /* 適當調整寬度 */
+        top: 20%;
+        left: 15%;
+        transform: translate(-20%, -15%);
+        width: 350px;
     }
 }
 
