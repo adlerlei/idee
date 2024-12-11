@@ -125,9 +125,16 @@
     right: 1em !important;
 }
 
+.column-img {
+    width: 100%;
+    height: auto;
+    o
+}
 
-/* .bimg {
-    background-image: url("../images/about/about-award.jpg");
-    width: 1200px;
-    height: 1200px;
-} */
+@media (min-width: 768px){
+    .column-img {
+        height: 800px;
+        width: auto;
+        object-fit: cover;
+    }
+}
