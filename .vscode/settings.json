@@ -1,6 +1,6 @@
 {
     "files.autoSave": "afterDelay",
     "editor.fontFamily": "Operator Mono",
-    "editor.fontSize": 18,
+    "editor.fontSize": 17,
     "chat.editor.fontSize": 18
 }
