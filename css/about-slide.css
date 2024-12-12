@@ -1,46 +1,11 @@
-/* about-slide.css */
-
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    display: flex; /* 加入 flex 屬性 */
-    align-items: center; /* 垂直方向置中 */
+.mySwiper {
+    width: 50%;
+    height: 100px;
 }
 
-.carousel-track {
-    display: flex; /* 使用 flex 排列圖片 */
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* 讓 track 佔據 .carousel-container 的寬度 */
-}
-
-.carousel-item {
-    width: calc(100% / 4); /* 調整圖片寬度，使四張圖片在同一行顯示 */
-}
-
-.carousel-item img {
+.mySwiper img {
     display: block;
-    max-width: 100%;
+    width: 122px;
     height: auto;
-}
-
-.carousel-prev,
-.carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    z-index: 1; /* 確保按鈕在圖片上方 */
-}
-
-.carousel-prev {
-    left: 10px;
-}
-
-.carousel-next {
-    right: 10px;
+    object-fit: cover;
 }
