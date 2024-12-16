@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t/uikit.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tm-header">
+        <div uk-sticky="end: #scrollup-dropbar; show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky">
+            <nav class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <div uk-navbar="target-y: !.uk-navbar-container; dropbar: true; dropbar-anchor: !.uk-navbar-container" class="uk-navbar">
+                        <div class="uk-navbar-left">
+                            <img class="uk-navbar-item uk-logo" src="images/logos/idee卓悅設計-logo.png" alt="">
+                        </div>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav">
+                                <li><a href="">HOME</a></li>
+                            </ul>
+                            <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon" href="" uk-navbar-toggle-icon="" role="button" aria-haspopup="true"><svg width="20" height="20" viewBox="0 0 20 20"></svg></a>
+                            <div class="uk-navbar-dropdown uk-drop uk-navbar-dropdown-dropbar" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false; target-y: !.uk-navbar-container" style="overflow-x: auto; top: 80px; left: 0px; width: 1571px; max-width: 1571px;">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">                                    
+                                    <li><a href="#">物品</a></li>
+                                    <li><a href="#">物品</a></li>
+                                    <!--水平線 <li class="uk-nav-divider"></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <content></content>
+
+    <footer uk-sticky="position: bottom; end: !.uk-height-large">haha</footer>
+
+    <script src="t/uikit.min.js"></script>
+</body>
+</html>
