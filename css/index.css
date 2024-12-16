@@ -3,49 +3,49 @@
     display: none;
 }
 
-
-/* index body images container setting */
-.content-wrapper {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.content-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
+/* 媒體查詢：在手機樣式下顯示滾動條 */
 @media (max-width: 768px) {
-    .content-wrapper {
-        height: 100vh;
+    body, html {
+        overflow: auto;
     }
-    
-    .content-wrapper img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+}
+
+/* 媒體查詢：在桌面樣式下隱藏滾動條 */
+@media (min-width: 769px) {
+    body, html {
+        overflow: hidden; /* 隱藏滾動條 */
+    }
+}
+
+footer {
+    background-color: #e9e9e8;
+    color: #7a7a7a;
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+/* 媒體查詢：在桌面樣式下黏性頁尾 */
+@media (min-width: 769px) {
+    footer {
+        position: sticky; /* 使用 sticky 使 footer 黏性 */
+        bottom: 0; /* 固定在底部 */
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        position: sticky; /* 使用 sticky 使 footer 黏性 */
     }
 }
 
 
 /* index ken-burns slide */
 .full-screen-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    opacity: 0;
+    height: 100vh; /* 高度設置為視口高度 */
+    width: 100%; /* 寬度設置為 100% */
+    object-fit: cover; /* 使圖片填滿並保持比例 */
+    display: block; /* 去除 img 的底部空白 */
     transition: opacity 1s ease-in-out;
     animation: kenburns 15s ease-in-out infinite;
-    transform-origin: center;
+    opacity: 0;
 }
 .full-screen-image.active {
     opacity: 1;
