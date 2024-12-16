@@ -1,6 +1,6 @@
 {
     "files.autoSave": "afterDelay",
-    "editor.fontFamily": "Operator Mono",
-    "editor.fontSize": 17,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 18,
     "chat.editor.fontSize": 18
 }
