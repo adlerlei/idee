@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
+    <!-- Structured data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "IDEE Interior Design 卓悅設計",
+            "url": "https://www.ideeinterior.com",
+            "logo": "https://www.ideeinterior.com/images/logos/idee卓悅設計-logo.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+886-2-2653-6685",
+                "contactType": "Customer Service",
+                "areaServed": "TW",
+                "availableLanguage": "Chinese"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3F.-1, No. 6, Sec. 6, Zhongxiao E. Rd.",
+                "addressLocality": "Nangang Dist",
+                "addressRegion": "Taipei City",
+                "postalCode": "115025",
+                "addressCountry": "Taiwan"
+            },
+            "sameAs": [
+                "https://www.instagram.com/vvch623/"
+            ]
+        }
+    </script>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="t/uikit.min.css">
-    <link rel="stylesheet" href="t/t.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="IDEE Interior Design 卓悅設計，專注於豪邸與辦公空間的高級訂製室內設計。我們屢獲國際大獎，提供高規格品質與細緻服務，立即聯繫我們，讓我們幫您打造夢想空間！" />
+
+    <title>IDEE Interior Design - 卓越的室內設計解決方案</title>
 </head>
 <body>
         <!-- navbar -->
@@ -14,7 +46,7 @@
                 <div class="uk-container uk-container-expand">
                     <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container" class="uk-navbar">
                         <div class="uk-navbar-left">
-                            <img class="uk-navbar-item uk-logo" src="images/logos/idee卓悅設計-logo.png" alt="">
+                            <img class="uk-navbar-item uk-logo" src="images/logos/idee卓悅設計-logo.png" alt="Idee卓悅設計-專業室內設計品牌Logo">
                         </div>
                         <div class="uk-navbar-right">
                             <ul class="uk-navbar-nav">
@@ -36,7 +68,6 @@
 
         <!-- kenburns slideshow -->
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" animation="scale" uk-slideshow="ratio: false; autoplay: true; autoplay-interval: 8000;">
-
             <div class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom:10">
                 <div>
                     <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
@@ -59,17 +90,33 @@
                     </div>
                 </div>
             </div>
-        
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
-        
         </div>
-werwer
+
     <!-- footer -->
     <footer >
-        固定頁尾
+        <div uk-grid class="uk-child-width-1-4@m">
+            <div>
+                <div class="uk-align-left">
+                    <img src="images/logos/idee卓悅設計-footer-logo.png" alt="">
+                </div>
+            </div>
+            <div>
+                <!-- 第二個欄位內容 -->
+                <div>欄位 2</div>
+            </div>
+            <div>
+                <!-- 第三個欄位內容 -->
+                <div>欄位 3</div>
+            </div>
+            <div>
+                <!-- 第四個欄位內容 -->
+                <div>欄位 4</div>
+            </div>
+        </div>
     </footer>
 
-    <script src="t/uikit.min.js"></script>
+    <script src="js/uikit.min.js"></script>
 </body>
 </html>
