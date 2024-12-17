@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="t/uikit.min.css">
+    <link rel="stylesheet" href="t/t.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="tm-header">
-        <div uk-sticky="end: #scrollup-dropbar; show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky">
+    
+        <div uk-sticky="" class="">
             <nav class="uk-navbar-container">
                 <div class="uk-container uk-container-expand">
-                    <div uk-navbar="target-y: !.uk-navbar-container; dropbar: true; dropbar-anchor: !.uk-navbar-container" class="uk-navbar">
+                    <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container" class="uk-navbar">
                         <div class="uk-navbar-left">
                             <img class="uk-navbar-item uk-logo" src="images/logos/idee卓悅設計-logo.png" alt="">
                         </div>
@@ -32,11 +33,89 @@
                 </div>
             </nav>
         </div>
-    </div>
+    
 
-    <content></content>
+        <!-- <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false">
 
-    <footer uk-sticky="position: bottom; end: !.uk-height-large">haha</footer>
+            <div class="uk-position-cover uk-animation-kenburns" uk-height-viewport="offset-top: true; offset-bottom: 0">
+                <div>
+                    <img src="images/index/slideshow/cozy-style.jpeg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="images/index/slideshow/modern-fashion.jpeg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="images/index/slideshow/nordic-style.png" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="images/index/slideshow/zen-home.jpeg" alt="" uk-cover>
+                </div>
+            </div>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+        
+        </div> -->
+        <!-- <div class="js-slideshow-animation uk-slideshow" uk-slideshow="ratio: 16:9; autoplay: true" role="region" aria-roledescription="carousel" animation="scale" finite="0">
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                <div class="uk-slideshow-items" aria-live="polite" id="uk-slideshow-16" style="aspect-ratio: 5 / 3; width: 100%;">
+                    <div id="uk-slideshow-17" role="tabpanel" aria-label="1 of 4" tabindex="-1" class="" style="opacity: 0; transform: scale3d(1.5, 1.5, 1); z-index: 0;">
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                            <img src="images/index/slideshow/cozy-style.jpeg" alt="" uk-cover="">
+                        </div>
+                    </div>
+                    <div id="uk-slideshow-18" role="tabpanel" aria-label="2 of 4" tabindex="-1" class="uk-slide-active uk-transition-active uk-active" style="z-index: -1;">
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                            <img src="images/index/slideshow/modern-fashion.jpeg" alt="" uk-cover="">
+                        </div>
+                    </div>
+                    <div id="uk-slideshow-19" role="tabpanel" aria-label="3 of 4" tabindex="-1" class="" style="opacity: 0; transform: scale3d(1.5, 1.5, 1); z-index: 0;">
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                            <img src="images/index/slideshow/nordic-style.png" alt="" uk-cover="">
+                        </div>
+                    </div>
+                    <div id="uk-slideshow-20" role="tabpanel" aria-label="4 of 4" tabindex="-1" class="uk-slide-active uk-transition-active" style="z-index: -1;">
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-center">
+                            <img src="images/index/slideshow/zen-home.jpeg" alt="" uk-cover="">
+                        </div>
+                    </div>
+                </div>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-icon uk-slidenav-previous uk-slidenav" href="" uk-slidenav-previous="" uk-slideshow-item="previous" role="button" aria-controls="uk-slideshow-16" aria-label="Previous slide"><svg width="14" height="24" viewBox="0 0 14 24"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23"></polyline></svg></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-icon uk-slidenav-next uk-slidenav" href="" uk-slidenav-next="" uk-slideshow-item="next" role="button" aria-controls="uk-slideshow-16" aria-label="Next slide"><svg width="14" height="24" viewBox="0 0 14 24"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1"></polyline></svg></a>
+            </div>
+        </div> -->
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" animation="scale" uk-slideshow="ratio: false; autoplay: true; autoplay-interval: 5000;">
+
+            <div class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom:30">
+                <div>
+                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                        <img src="images/index/slideshow/cozy-style.jpeg" alt="" uk-cover>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                        <img src="images/index/slideshow/modern-fashion.jpeg" alt="" uk-cover>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                        <img src="images/index/slideshow/nordic-style.png" alt="" uk-cover>
+                    </div>
+                </div>
+            </div>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+        
+        </div>
+werwer
+
+    <footer >
+        固定頁尾
+    </footer>
 
     <script src="t/uikit.min.js"></script>
 </body>
