@@ -44,35 +44,45 @@
 
 <body>
     <!-- navbar -->
-    <div uk-sticky="" class="">
+    <!-- <div uk-sticky="" class=""> -->
         <nav class="uk-navbar-container">
             <div class="uk-container uk-container-expand">
-                <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container" class="uk-navbar">
-                    <div class="uk-navbar-left uk-padding-small">
-                        <img class="uk-navbar-item uk-logo" width="99.36" height="67.67" src="images/logos/idee卓悅設計-logo.png"
-                            alt="Idee卓悅設計-專業室內設計品牌Logo">
-                    </div>
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
-                            <li><a href="">HOME</a></li>
-                        </ul>
-                        <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon" href=""
-                            uk-navbar-toggle-icon="" role="button" aria-haspopup="true"><svg width="20" height="20"
-                                viewBox="0 0 20 20"></svg></a>
-                        <div class="uk-navbar-dropdown uk-drop uk-navbar-dropdown-dropbar"
-                            uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false; target-y: !.uk-navbar-container"
-                            style="overflow-x: auto; top: 80px; left: 0px; width: 1571px; max-width: 1571px;">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="#">物品</a></li>
-                                <li><a href="#">物品</a></li>
-                                <!--水平線 <li class="uk-nav-divider"></li> -->
-                            </ul>
-                        </div>
-                    </div>
+            <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container">
+            <div class="uk-navbar-left">
+                <img class="nav-logo uk-navbar-item uk-logo" src="images/logos/idee卓悅設計-logo.png"
+                    alt="Idee卓悅設計-專業室內設計品牌Logo">
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-visible@m">
+                    <li><a href="index.html" title="返回首頁">HOME</a></li>
+                    <li><a href="#" title="分隔符">|</a></li>
+                    <li><a href="about.html" title="了解我們的設計理念">ABOUT</a></li>
+                    <li><a href="#" title="分隔符">|</a></li>
+                    <li><a href="projects.html" title="瀏覽我們的專案">PROJECTS</a></li>
+                    <li><a href="#" title="分隔符">|</a></li>
+                    <li><a href="contact.html" title="與我們聯繫">CONTACT</a></li>
+                </ul>
+                
+                <a class="uk-hidden@m uk-navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon" href=""
+                    uk-navbar-toggle-icon="" role="button" aria-haspopup="true"><svg width="20" height="20"
+                        viewBox="0 0 20 20"></svg></a>
+                
+                <div class="uk-navbar-dropdown uk-drop uk-navbar-dropdown-dropbar"
+                    uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false; target-y: !.uk-navbar-container"
+                    style="overflow-x: auto; top: 80px; left: 0px; width: 1571px; max-width: 1571px;">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="index.html" title="返回首頁">HOME</a></li>
+                        <li><a href="about.html" title="了解我們的設計理念">ABOUT</a></li>
+                        <li><a href="projects.html" title="瀏覽我們的專案">PROJECTS</a></li>
+                        <li><a href="contact.html" title="與我們聯繫">CONTACT</a></li>
+                        <!--水平線 <li class="uk-nav-divider"></li> -->
+                    </ul>
                 </div>
             </div>
+            </div>
+            </div>
         </nav>
-    </div>
+    <!-- </div> -->
 
     <!-- kenburns slideshow -->
     <div class="uk-position-relative uk-visible-toggle uk-light" animation="scale"
@@ -112,18 +122,23 @@
     <!-- footer uk-text-right@m  -->
     <div class="footer-style uk-flex-middle uk-padding-small" uk-grid>
         <div class="uk-width-expand@m uk-width-1-1">
-          <div><img src="images/logos/idee卓悅設計-footer-logo.png" width="273.69" height="63.23" alt="Idee卓悅設計-專業室內設計品牌頁尾Logo"></div>
+            <div><img src="images/logos/idee卓悅設計-footer-logo.png" width="273.69" height="63.23"
+                    alt="Idee卓悅設計-專業室內設計品牌頁尾Logo"></div>
         </div>
         <div class="uk-width-auto@m uk-width-1-1">
-          <div class="phone-padding"><img src="images/icons/footer-icons/idee-phone.png" width="11" alt="聯絡電話圖標">&nbsp;&nbsp; | &nbsp;&nbsp;+886-2-2653-6685</div>
+            <div class="phone-padding"><img src="images/icons/footer-icons/idee-phone.png" width="11"
+                    alt="聯絡電話圖標">&nbsp;&nbsp; | &nbsp;&nbsp;+886-2-2653-6685</div>
         </div>
         <div class="uk-width-auto@m uk-width-1-1">
-          <div class="phone-padding"><img src="images/icons/footer-icons/idee-adder.png" width="11" height="13.5" alt="地址圖標">&nbsp;&nbsp; | &nbsp;&nbsp;3F.-1, No. 6, Sec. 6, Zhongxiao E. Rd., Nangang Dist, Taipei City 115025, Taiwan (R.O.C.)</div>
+            <div class="phone-padding"><img src="images/icons/footer-icons/idee-adder.png" width="11" height="13.5"
+                    alt="地址圖標">&nbsp;&nbsp; | &nbsp;&nbsp;3F.-1, No. 6, Sec. 6, Zhongxiao E. Rd., Nangang Dist, Taipei
+                City 115025, Taiwan (R.O.C.)</div>
         </div>
         <div class="uk-width-auto@m uk-width-1-1">
-          <div class="phone-padding"><img src="images/icons/footer-icons/idee-mail.png" width="11" alt="電子郵件圖標">&nbsp;&nbsp;|&nbsp;&nbsp;idee6685@gmail.com</div>
+            <div class="phone-padding"><img src="images/icons/footer-icons/idee-mail.png" width="11"
+                    alt="電子郵件圖標">&nbsp;&nbsp;|&nbsp;&nbsp;idee6685@gmail.com</div>
         </div>
-      </div>
+    </div>
 
     <script src="js/uikit.min.js"></script>
 </body>

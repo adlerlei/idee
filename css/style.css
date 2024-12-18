@@ -20,7 +20,15 @@
     font-size: 16px;
     color: #7a7a7a;
 }
-
+.nav-logo{
+    max-width: 99.36px;
+    max-width: auto;
+    padding: 10px 0 10px 10px;
+}
+.ig-icon{
+    font-size: 20px;
+    color: #7a7a7a;
+}
 
 
 /* footer setting */
