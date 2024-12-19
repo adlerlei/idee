@@ -1,0 +1,51 @@
+.project-page {
+    margin-top: 100px;
+}
+
+a {
+    color: inherit;        /* 继承父元素的颜色，或者使用 transparent 使其透明 */
+    text-decoration: none; /* 移除底线 */
+}
+
+.show-img {
+    width: 100%; /* 讓圖片寬度自適應容器 */
+    display: block;
+    padding: 0; /* 移除圖片的 padding */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    padding: 20px; /* 保留 image-container 的 padding */
+    overflow: hidden; /* 確保子元素不會超出容器範圍 */
+}
+
+.overlay {
+    position: absolute;
+    top: 20px; /* 與 image-container 的 padding-top 相同 */
+    left: 20px; /* 與 image-container 的 padding-left 相同 */
+    /* 計算 overlay 的寬高，使其與圖片大小相同 */
+    width: calc(100% - 40px); /* 減去左右 padding */
+    height: calc(100% - 40px); /* 減去上下 padding */
+    background-color: rgba(205, 205, 205, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.mb {
+    margin-bottom: 100px;
+}
