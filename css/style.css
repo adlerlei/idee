@@ -12,10 +12,23 @@
     font-style: normal;
 }
 
-/* body{
-    font-family: 'Tahoma', serif;
-    font-family: 'Noto Serif TC', serif;
-} */
+.navbar-dropdown,
+.navbar-dropdown a.navbar-item {
+    transition: background-color 0.3s ease;
+}
+
+.navbar-dropdown,
+.navbar-dropdown a.navbar-item:not(.is-active, .is-selected) {
+    background-color: #cdcdcd;
+    color: #6e6d6d;
+}
+
+.navbar-dropdown:hover,
+.navbar-dropdown a.navbar-item:hover {
+    background-color: #6e6d6d;
+    color: #fff;
+}
+
 .noto-serif-tc {
     font-family: 'Noto Serif TC', serif;
 }
