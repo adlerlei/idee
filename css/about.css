@@ -1,3 +1,4 @@
+/* body setting */
 body {
     min-height: 100%;
     padding-bottom: 100px;
@@ -7,6 +8,9 @@ body {
         padding-bottom: 0;
     }
 }
+
+
+/* overlay box setting */
 .overlay-box {
     position: absolute;
     top: 30%;
@@ -59,6 +63,20 @@ body {
     background-color: #7a7a7a;
     margin: 0 auto;
     margin-top: 100px;
+}
+
+
+/* about slide */
+.mySwiper {
+    width: 50%;
+    height: 100px;
+}
+
+.mySwiper img {
+    display: block;
+    width: 122px;
+    height: auto;
+    object-fit: cover;
 }
 
 .about-slide {
