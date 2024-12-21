@@ -36,14 +36,53 @@ a {
     box-sizing: border-box;
 }
 
-.image-container:hover .overlay {
-    opacity: 1;
-}
-
 .text {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     text-align: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+/* 預設隱藏 mobile-text-container */
+.mobile-text-container {
+    display: none;
+}
+
+/* 手機樣式 */
+@media (max-width: 768px) { /* 根據你的需求調整這個值，這裡是 Bulma 的手機斷點 */
+    /* 在手機上隱藏 overlay */
+    .overlay {
+        display: none;
+    }
+    /* 手機上可能不需要 padding */
+    .image-container {
+        padding: 0;
+    }
+
+    .show-img {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    .mobile-text-container {
+        display: block; /* 顯示文字容器 */
+        background-color: rgba(205, 205, 205, 0.5); /* 與 overlay 相同的背景顏色 */
+        padding: 10px; /* 根據需要調整 padding */
+    }
+
+    .mobile-text-container .text {
+        color: rgb(255, 255, 255); /* 文字顏色 */
+        font-size: 1rem; /* 調整文字大小 */
+        text-align: left; /* 文字靠左對齊 */
+        /* 其他文字樣式 */
+    }
+    .mobile-text-container .text a{
+        color: inherit;
+    }
 }
 
 .mb {
