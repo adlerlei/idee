@@ -1,0 +1,53 @@
+:root {
+    --column-gap: 60px;  /* 列間距 */
+    --item-gap: 20px;    /* 圖片間距 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.masonry-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: var(--column-gap);
+}
+
+@media screen and (min-width: 1025px) {
+    .masonry-container {
+        columns: 3 var(--column-gap);  /* 直接在columns屬性中使用間距 */
+    }
+}
+
+.masonry-item {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: var(--item-gap);
+    break-inside: avoid;
+}
+
+.masonry-item img {
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+    display: block;
+    /* border-radius: 8px; */
+}
+
+/* 平板設備 - 小於 1024px */
+@media screen and (max-width: 1024px) {
+    .masonry-container {
+        columns: 2 var(--column-gap);
+    }
+}
+
+/* 移動設備 - 小於 768px */
+@media screen and (max-width: 768px) {
+    .masonry-container {
+        columns: 1;
+        --column-gap: 20px;
+    }
+}
