@@ -1,7 +1,7 @@
 {
     "files.autoSave": "afterDelay",
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "chat.editor.fontSize": 18,
     "workbench.editor.enablePreview": false
 }
