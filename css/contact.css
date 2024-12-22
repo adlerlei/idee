@@ -1,0 +1,38 @@
+.hero-container {
+    position: relative;
+}
+
+.hero-container-img {
+    width: 100%;
+    display: block;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, 
+        rgba(255, 255, 255, 0.98) 0%,
+        rgba(255, 255, 255, 0.98) 40%,
+        rgba(255, 255, 255, 0.8) 70%,
+        transparent 100%
+    );
+}
+
+.text-content {
+    position: absolute;
+    top: 60%;         /* 垂直置中 */
+    left: 20%;        /* 左邊留空 */
+    transform: translateY(-50%);  /* 確保完全垂直置中 */
+    z-index: 1;       /* 確保文字在漸層上方 */
+    color: #333;      /* 文字顏色 */
+}
+
+.icon {
+    width: 11px;  /* 依據你的需求調整大小 */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;  /* 圖示和文字之間的間距 */
+}

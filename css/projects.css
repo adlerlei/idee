@@ -2,11 +2,6 @@
     margin-top: 100px;
 }
 
-a {
-    color: inherit;        /* 继承父元素的颜色，或者使用 transparent 使其透明 */
-    text-decoration: none; /* 移除底线 */
-}
-
 .show-img {
     width: 100%; /* 讓圖片寬度自適應容器 */
     display: block;

@@ -12,8 +12,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'NotoSansTC-Light';
+    src: url('../fonts/NotoSansTC-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* font */
+.sans {
+    font-family: 'NotoSansTC-Light', sans-serif;
+}
 .noto-serif-tc {
     font-family: 'Noto Serif TC', serif;
 }
@@ -160,4 +170,9 @@ footer {
         margin-left: 28px;
         padding: 20px 0;
     }
+}
+
+a {
+    color: inherit;        /* 继承父元素的颜色，或者使用 transparent 使其透明 */
+    text-decoration: none; /* 移除底线 */
 }
