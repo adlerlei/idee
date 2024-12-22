@@ -51,8 +51,12 @@ a {
     display: none;
 }
 
-/* 手機樣式 */
-@media (max-width: 768px) { /* 根據你的需求調整這個值，這裡是 Bulma 的手機斷點 */
+.mb {
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 768px) { 
     /* 在手機上隱藏 overlay */
     .overlay {
         display: none;
@@ -75,7 +79,7 @@ a {
     }
 
     .mobile-text-container .text {
-        color: rgb(255, 255, 255); /* 文字顏色 */
+        color: #6e6d6d;
         font-size: 1rem; /* 調整文字大小 */
         text-align: left; /* 文字靠左對齊 */
         /* 其他文字樣式 */
@@ -83,8 +87,4 @@ a {
     .mobile-text-container .text a{
         color: inherit;
     }
-}
-
-.mb {
-    margin-bottom: 100px;
 }

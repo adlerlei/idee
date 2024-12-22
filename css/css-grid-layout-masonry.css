@@ -1,3 +1,7 @@
+.layout-setting {
+    margin: 100px 0;
+}
+
 :root {
     --column-gap: 60px;  /* 列間距 */
     --item-gap: 20px;    /* 圖片間距 */
