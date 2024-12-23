@@ -26,8 +26,76 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-content {
+        position: absolute;
+        top: 18%;
+        left: 15%;      
+        transform: translateY(-50%); 
+        z-index: 1;     
+        color: #6e6d6d;  
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    .gradient-overlay {
+        position: absolute;
+        top: -580px;
+        left: 0;
+        width: 70%;
+        height: 1024px;
+        background: linear-gradient(to right, 
+            rgba(255, 255, 255, 0.98) 0%,
+            rgba(255, 255, 255, 0.98) 40%,
+            rgba(255, 255, 255, 0.8) 70%,
+            transparent 100%
+        );
+    }
+}
+
+.content-info {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .content-info {
+        margin-top: 300px;
+    }
+    .gradient-overlay {
+        position: absolute;
+        top: -815px;
+        left: 0;
+        width: 70%;
+        height: 1024px;
+        background: linear-gradient(to right, 
+            rgba(255, 255, 255, 0.98) 0%,
+            rgba(255, 255, 255, 0.98) 40%,
+            rgba(255, 255, 255, 0.8) 70%,
+            transparent 100%
+        );
+    }
+}
+
+/* @media (max-width: 768px) {
+    .text-content {
+        position: none;
+        transform: none;
+    }
+} */
+
 @media (max-width: 768px) {
     .text-content {
         top: 30%;
     }
+}
+
+.italic {
+    font-style: italic;
+}
+
+.button-color {
+    background-color: #6e6d6d;
+    color: #ffffff;
+}
+
+.button-mb {
+    margin-bottom: 200px;
 }
