@@ -32,7 +32,7 @@
 }
 
 .text {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -74,7 +74,7 @@
     }
 
     .mobile-text-container .text {
-        color: #6e6d6d;
+        color: #ffffff;
         font-size: 1rem; /* 調整文字大小 */
         text-align: left; /* 文字靠左對齊 */
         /* 其他文字樣式 */
