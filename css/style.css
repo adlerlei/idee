@@ -19,6 +19,14 @@
     font-style: normal;
 }
 
+main {
+    position: relative;
+    flex: 1;
+    height: calc(100vh - 87px); /* 減去 navbar 的高度 */
+    overflow: hidden;
+    margin-top: -87px;
+}
+
 
 /* font */
 .sans {
