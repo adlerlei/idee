@@ -13,8 +13,8 @@ body {
 /* overlay box setting */
 .overlay-box {
     position: absolute;
-    top: 30%;
-    left: 8%;
+    top: 330px;
+    left: 330px;
     transform: translate(-30%, -8%);
     z-index: 1;
     background-color: rgba(255,255,255,0.9);
@@ -26,8 +26,8 @@ body {
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .overlay-box {
-        top: 30%;
-        left: 8%;
+        top: 330px;
+        left: 330px;
         transform: translate(-30%, -8%);
         width: 350px;
     }
@@ -35,8 +35,8 @@ body {
 
 @media (max-width: 768px) {
     .overlay-box {
-        top: 20%;
-        left: 15%;
+        top: 250px;
+        left:80px;
         transform: translate(-20%, -15%);
         width: 350px;
     }

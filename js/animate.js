@@ -1,4 +1,4 @@
-// about.html
+// about-main.html
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       // 當元素進入視窗
@@ -15,6 +15,24 @@ const observer = new IntersectionObserver((entries) => {
   document.querySelectorAll('.scroll-animate').forEach((element) => {
     observer.observe(element);
   });
+
+  // about-head.html
+const aboutHeadObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    // 當元素進入視窗
+    if (entry.isIntersecting) {
+      // 添加動畫 class
+      entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
+      // 如果你不想要重複動畫，可以取消觀察
+      aboutHeadObserver.unobserve(entry.target);
+    }
+  });
+});
+
+// 選擇所有需要動畫的元素
+document.querySelectorAll('.about-head-animate').forEach((element) => {
+  aboutHeadObserver.observe(element);
+});
 
   // project.html --
   const projectObserver = new IntersectionObserver((entries) => {
